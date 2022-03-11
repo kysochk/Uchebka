@@ -24,5 +24,20 @@ namespace Uchebka
         {
             InitializeComponent();
         }
+
+        private void Filtr_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void Sort_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void SearchBarTxt_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
