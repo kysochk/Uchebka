@@ -20,17 +20,16 @@ namespace Uchebka
     /// </summary>
     public partial class MainWindow : Window
     {
-        LoadList LoadS = new LoadList();
-        List<MainWindow> ls;
+      
         public MainWindow()
         {
             InitializeComponent();
             BaseConnect.BaseModel = new Entities(); //БД
-        }
-        void info()
-        {
-            kol_voZap.Text = "Записей на странице: " + ls.Count + " из " + kol_voZap;
-        }
+           
+
+    }
+        public System.Collections.IEnumerable ItemsSource { get; set; }
+
 
         private void Filtr_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {

@@ -47,7 +47,29 @@
                 </ComboBox>
 
             </GroupBox>
-                
+            <GroupBox >
+                <StackPanel Orientation="Horizontal" Width="600px" >
+                    <Image x:Name="Image" Source="{Binding Image}" Height="75px" Width="75px"/>
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock x:Name="Title" Text="{Binding Title}"/>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock x:Name="ArticleNumber" Text="{Binding ArticleNumber, StringFormat = {}{0:N2}}" TextDecorations="{Binding decor}">
+                                    <Run Text=" "/>
+                            </TextBlock>
+                            <TextBlock Text="{Binding MinCostForeAgent, StringFormat = {}{0:N2}}" Visibility="{Binding visible}">
+                                    <Run Text=" "/>
+                            </TextBlock>
+                           
+                        </StackPanel>
+
+
+                        
+
+                       
+                    </StackPanel>
+                </StackPanel>
+            </GroupBox>
+
         </StackPanel>
 
         <TextBlock x:Name="kol_voZap" Grid.Column="0" Grid.Row="3" />
